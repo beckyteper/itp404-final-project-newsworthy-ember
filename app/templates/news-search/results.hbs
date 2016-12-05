@@ -2,11 +2,11 @@
 
 <h3 class="results-header">Results</h3>
 
-{{#each model.NYTArticles as |NYTArticle|}}
+{{!-- {{#each model.NYTArticles as |NYTArticle|}}
   <div class="article">
     <a href="{{NYTArticle.linkToArticle}}">{{NYTArticle.title}}</a>
   </div>
-{{/each}}
+{{/each}} --}}
 
 {{#each model.CNNArticles as |CNNArticle|}}
   <div class="article">
@@ -17,5 +17,11 @@
 {{#each model.WSJArticles as |WSJArticle|}}
   <div class="article">
     <a href="{{WSJArticle.linkToArticle}}">{{WSJArticle.title}}</a>
+  </div>
+{{/each}}
+
+{{#each model.GuardianArticles as |GuardianArticle|}}
+  <div class="article">
+    <a href="{{GuardianArticle.linkToArticle}}">{{GuardianArticle.title}}</a>
   </div>
 {{/each}}

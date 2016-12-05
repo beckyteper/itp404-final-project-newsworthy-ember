@@ -5,25 +5,31 @@ export default Ember.Route.extend({
   model: function(params) {
     var searchTerm = params.term;
 
-    var promise = $.ajax({
-      type: 'get',
-      url: 'http://localhost:3000/nytimes/' + searchTerm
-    });
+    // var promise = $.ajax({
+    //   type: 'get',
+    //   url: 'http://itp-404-newsworthy.herokuapp.com/nytimes/' + searchTerm
+    // });
 
     var promise2 = $.ajax({
       type: 'get',
-      url: 'http://localhost:3000/cnn/' + searchTerm
+      url: 'http://itp-404-newsworthy.herokuapp.com/cnn/' + searchTerm
     });
 
     var promise3 = $.ajax({
       type: 'get',
-      url: 'http://localhost:3000/wallstreetjournal/' + searchTerm
+      url: 'http://itp-404-newsworthy.herokuapp.com/wallstreetjournal/' + searchTerm
     });
 
+    var promise4 = $.ajax({
+      type: 'get',
+      url: 'http://itp-404-newsworthy.herokuapp.com/theguardian/' + searchTerm
+    })
+
     return Ember.RSVP.hash({
-      NYTArticles: promise,
+      //NYTArticles: promise,
       CNNArticles: promise2,
-      WSJArticles: promise3
+      WSJArticles: promise3,
+      GuardianArticles: promise4
     });
   }
 });
