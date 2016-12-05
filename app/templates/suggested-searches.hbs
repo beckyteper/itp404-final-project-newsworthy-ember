@@ -1,0 +1,15 @@
+{{outlet}}
+
+<h3 class="suggested-searches-header">Suggested Searches</h3>
+<p class="suggested-intro">Use one of these searches to get started.</p>
+
+<form onsubmit={{action 'linkToTopic'}} class="suggested-form">
+  Topic: {{input type="text" value=searchTopic}}
+  <button type="submit">Search</button>
+</form>
+
+<ul class="list-group">
+  <li class="list-group-item">Trump</li>
+  <li class="list-group-item">USC</li>
+  <li class="list-group-item">Election</li>
+</ul>

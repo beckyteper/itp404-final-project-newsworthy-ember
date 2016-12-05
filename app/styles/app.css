@@ -1,0 +1,52 @@
+.site-title {
+  text-align: center;
+}
+
+.home-link {
+  text-align: left;
+}
+
+.news-search-link {
+  text-align: center;
+}
+
+.suggested-searches-link {
+  text-align: right;
+}
+
+.news-search-home-link {
+  text-align: center;
+}
+
+.suggested-searches-home-link {
+  text-align: center;
+}
+
+.search-form {
+  text-align: center;
+}
+
+.search-header {
+  text-align: center;
+}
+
+.results-header {
+  text-align: center;
+}
+
+.article {
+  text-align: center;
+}
+
+.suggested-searches-header {
+  text-align: center;
+}
+
+.suggested-intro {
+  text-align: center;
+}
+
+.suggested-form {
+  text-align: center;
+  padding-bottom: 10px;
+}

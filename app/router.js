@@ -7,6 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('news-search', function() {
+    this.route('results', { path: ':term' });
+  });
+  this.route('suggested-searches');
 });
 
 export default Router;

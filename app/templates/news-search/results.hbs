@@ -1,0 +1,21 @@
+{{outlet}}
+
+<h3 class="results-header">Results</h3>
+
+{{#each model.NYTArticles as |NYTArticle|}}
+  <div class="article">
+    <a href="{{NYTArticle.linkToArticle}}">{{NYTArticle.title}}</a>
+  </div>
+{{/each}}
+
+{{#each model.CNNArticles as |CNNArticle|}}
+  <div class="article">
+    <a href="{{CNNArticle.linkToArticle}}">{{CNNArticle.title}}</a>
+  </div>
+{{/each}}
+
+{{#each model.WSJArticles as |WSJArticle|}}
+  <div class="article">
+    <a href="{{WSJArticle.linkToArticle}}">{{WSJArticle.title}}</a>
+  </div>
+{{/each}}

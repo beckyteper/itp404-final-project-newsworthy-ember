@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1 class="site-title">Newsworthy</h1>
+  </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+        <li>{{#link-to 'news-search'}}Search for News{{/link-to}}</li>
+        <li>{{#link-to 'suggested-searches'}}Suggested Search Topics{{/link-to}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+{{outlet}}
